@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pet.pet_name}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{pet.pet_name}}</h1>
+    <h3 id="fact-intro">Did you know?</h3>
+    <p id="fact">{{pet.pet_fact}}</p>
+    <img id="pet-photo" src="{{pet.pet_photo}}" alt="{{pet.pet_name}}">
+    <a href="/pets">Go Back</a>
+</body>
+</html>
